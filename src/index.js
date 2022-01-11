@@ -45,9 +45,9 @@ function markupList(countries) {
         countries.map(({ name, capital, population, flags, languages }) => {
             const markup =
             `<h1><img src="${flags.svg}" alt="Flag of ${name.official}" style="height: 120px; width: 160px"> ${name.official}</h1>
-        <li>Capital: ${capital}</li>
-        <li>Population: ${population}</li>
-        <li>Languages: ${Object.values(languages)}</li>`;
+        <p>Capital: ${capital}</p>
+        <p>Population: ${population}</p>
+        <p>Languages: ${Object.values(languages)}</p>`;
             countryInfo.innerHTML = markup;
         })
 
